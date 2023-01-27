@@ -48,7 +48,7 @@ function createProduct() {
   clone.querySelector('.price > span').textContent =  productPrice;
   clone.querySelector('.name > span').textContent =  productName;
 
-  const removeBtn = clone.querySelector('.btn.btn-remove').addEventListener('click', removeProduct);
+  clone.querySelector('.btn.btn-remove').addEventListener('click', removeProduct);
 
   tbody.appendChild(clone);
   inputName.value = '';
